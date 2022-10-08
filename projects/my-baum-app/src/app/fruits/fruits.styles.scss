@@ -1,0 +1,13 @@
+@import "./containers/entry/entry.container.theme";
+@import "./containers/juices/juices.container.theme";
+@import "./containers/cadies/cadies.container.theme";
+@import "./components/juices-detail/juices-detail.dialog.theme";
+@import "./components/cadies-detail/cadies-detail.bottom-sheet.theme";
+
+@mixin fruits-theme($theme) {
+  @include app-entry-container-theme($theme);
+  @include app-juices-container-theme($theme);
+  @include app-cadies-container-theme($theme);
+  @include app-juices-detail-dialog-theme($theme);
+  @include app-cadies-detail-bottom-sheet-theme($theme);
+}
